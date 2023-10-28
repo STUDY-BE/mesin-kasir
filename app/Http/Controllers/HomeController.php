@@ -6,5 +6,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
+    public function index(){
+        $data = array(
+            'title' => 'Home Page',
+        );
+        return view('Home', $data);
+    }
+   
 }
