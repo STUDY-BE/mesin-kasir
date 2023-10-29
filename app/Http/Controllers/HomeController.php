@@ -10,7 +10,8 @@ class HomeController extends Controller
         $data = array(
             'title' => 'Home Page',
         );
-        return view('Home', $data);
+        return view('index', $data);
+        // return view('Home', $data);
     }
    
 }
